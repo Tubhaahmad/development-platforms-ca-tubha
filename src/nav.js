@@ -1,7 +1,10 @@
 import { supabase } from "./supabaseClient.js";
 
 export async function renderNav() {
-  const nav = document.getElementById("nav");
+  console.log("renderNav() running");
+  const nav = document.querySelector("nav");
+
+  console.log("nav element:", nav);
   if (!nav) return;
 
   // check if user is logged in
