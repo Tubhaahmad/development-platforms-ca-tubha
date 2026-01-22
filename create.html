@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Create</title>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <h1>Create Article</h1>
+      <form id="createForm">
+        <input name="title" type="text" placeholder="Title" required />
+        <textarea name="body" placeholder="Body" required></textarea>
+        <input name="category" placeholder="Category" required />
+        <button type="submit">Create Article</button>
+      </form>
+      <p id="msg"></p>
+    </main>
+    <script type="module" src="/src/create.js"></script>
+  </body>
+</html>

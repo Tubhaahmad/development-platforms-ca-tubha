@@ -1,3 +1,4 @@
+console.log("Supabase URL:", import.meta.env.VITE_SUPABASE_URL);
 import { createClient } from "@supabase/supabase-js";
 
 export const supabase = createClient(
