@@ -85,3 +85,21 @@ npm run dev
 Open the URL Vite prints (usually http://localhost:5173).
 
 # Motivation
+
+I chose option 2 because it let me build a full working site quickly. Supabase handled authentication and the database, so I could focus on the frontend and connecting everything together.
+
+### What I liked:
+
+- It was fun to connect register/login to a real backend.
+- RLS policies made it possible to easily restrict article creation to logged in users.
+
+### What I found difficult:
+
+- Understanding why RLS blocks everything until policies are added.
+- Email confirmation caused login errors until I confirmed the user.
+
+### What I think the benefits of developing a custom API are versus using a SaaS option like Supabase, or vice versa.
+
+- A custom API gives more control, but takes much more time and requires handling security.
+- Supabase is significantly faster to set up, but you depend on the platform and its own way of doing things.
+
