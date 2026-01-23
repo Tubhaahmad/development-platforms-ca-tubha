@@ -23,7 +23,7 @@ export async function renderNav() {
     const logoutBtn = document.querySelector("#logoutBtn");
     logoutBtn.addEventListener("click", async () => {
       await supabase.auth.signOut();
-      window.location.href = "/";
+      window.location.href = "/login.html";
     });
   } else {
     nav.innerHTML = `
