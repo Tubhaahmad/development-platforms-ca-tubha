@@ -5,12 +5,13 @@ export async function renderNav() {
 
   if (!nav) return;
 
-  // check if user is logged in
+  // check if user is logged in //
   const {
     data: { session },
   } = await supabase.auth.getSession();
   const loggedIn = !!session;
 
+  // render different nav items based on login status //
   if (session) {
     nav.innerHTML = `
       <a href="/">Home</a>
