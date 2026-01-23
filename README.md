@@ -72,7 +72,7 @@ Copy .env.example to .env and fill in your Supabase values:
 
 Example .env:
 
-VITE_SUPABASE_URL=<https://YOURPROJECT.supabase.co>
+VITE_SUPABASE_URL=https://YOURPROJECT.supabase.co
 VITE_SUPABASE_ANON_KEY=YOUR_PUBLISHABLE_KEY
 
 ### 3. Install and run
@@ -82,7 +82,7 @@ npm install
 npm run dev
 `
 
-Open the URL Vite prints (usually <http://localhost:5173>)
+Open the URL Vite prints (usually http://localhost:5173)
 
 ## Motivation
 
