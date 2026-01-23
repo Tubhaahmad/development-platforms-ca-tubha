@@ -107,3 +107,10 @@ I chose option 2 because it let me build a full working site quickly. Supabase h
 - A custom API gives more control, but takes much more time and requires handling security.
 - Supabase is significantly faster to set up, but you depend on the platform and its own way of doing things.
 
+### Tools
+
+ChatGPT was used as a helper for:
+- CSS styling
+- Explaining Supabase concepts (Auth, sessions RLS, policies)
+- Generating news article text
+
