@@ -1,18 +1,17 @@
 import { supabase } from "./supabaseClient.js";
 
 export async function renderNav() {
-  console.log("renderNav() running");
   const nav = document.querySelector("nav");
 
-  console.log("nav element:", nav);
   if (!nav) return;
 
-  // check if user is logged in
+  // check if user is logged in //
   const {
     data: { session },
   } = await supabase.auth.getSession();
   const loggedIn = !!session;
 
+  // render different nav items based on login status //
   if (session) {
     nav.innerHTML = `
       <a href="/">Home</a>
@@ -23,7 +22,7 @@ export async function renderNav() {
     const logoutBtn = document.querySelector("#logoutBtn");
     logoutBtn.addEventListener("click", async () => {
       await supabase.auth.signOut();
-      window.location.href = "/";
+      window.location.href = "/login.html";
     });
   } else {
     nav.innerHTML = `

@@ -6,20 +6,307 @@
   margin: 0;
 }
 
+form {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* Nav */
 nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 16px;
   display: flex;
   gap: 12px;
-  padding: 12px 16px;
-  background-color: #12101bff;
+  align-items: center;
   flex-wrap: wrap;
+  z-index: 10;
 }
 
 nav a {
   text-decoration: none;
-  color: #f0f0f0;
   font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: #f2f2f2;
 }
 
 nav button {
   cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+nav button:hover {
+  background: #f2f2f2;
+}
+
+/* form */
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 480px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  width: 12rem;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #111;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* msg */
+#msg {
+  margin-top: 10px;
+}
+
+.error {
+  color: crimson;
+}
+
+.info {
+  color: #222;
+}
+
+#articles {
+  display: grid;
+  gap: 14px;
+}
+
+article {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 12px 0;
+  background: white;
+}
+
+article h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+}
+
+article p {
+  margin: 8px 0;
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 12px;
+  }
+
+  nav {
+    padding: 10px 12px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+.home-title {
+  margin-bottom: 6px;
+  color: #384872ff;
+}
+
+.home-subtitle {
+  margin-top: 0;
+  opacity: 0.75;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.8rem;
+}
+
+.news-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 16px;
+  background: white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.news-title {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.news-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.news-category {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff; /* soft color */
+  color: #1f2a6b;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.news-date {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.news-body {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* create page */
+.create-page {
+  max-width: 680px;
+  margin: 28px auto;
+}
+
+.page-header {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.page-subtitle {
+  margin: 6px 0 0 0;
+  opacity: 0.8;
+  max-width: 55ch;
+}
+
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 18px;
+  background: white;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  max-width: 100%;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.form input,
+.form textarea {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 14px;
+}
+
+.form textarea {
+  min-height: 220px;
+}
+
+.message {
+  margin-top: 10px;
+}
+
+@media (min-width: 480px) {
+  input,
+  textarea {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 16px 12px;
+  }
+
+  nav {
+    padding: 10px 12px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .create-page {
+    margin: 16px auto;
+  }
+
+  .card {
+    padding: 12px;
+  }
 }

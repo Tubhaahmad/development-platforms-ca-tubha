@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# dependencies
+node_modules/
+
+# env keys (DO NOT COMMIT)
+.env
+
+# build output
+dist/
+
+
