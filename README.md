@@ -90,7 +90,7 @@ Open the URL Vite prints (usually http://localhost:5173).
 
 ## Motivation
 
-chose option 2 because it let me build a full working site quickly. Supabase handled authentication and the database, so I could focus on the frontend and connecting everything together.
+I chose option 2 because it let me build a full working site quickly. Supabase handled authentication and the database, so I could focus on the frontend and connecting everything together.
 
 ### What I liked
 
