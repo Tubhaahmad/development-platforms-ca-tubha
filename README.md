@@ -70,6 +70,8 @@ Auth requirement:
 
 ### 2. Environment variables
 
+Supabase is configured using environment variables (the project URL and anon key are stored in `.env` and not committed to GitHub).
+
 Copy .env-example to .env and fill in your Supabase values:
 
 - VITE_SUPABASE_URL (Project URL)
