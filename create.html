@@ -9,14 +9,47 @@
   <body>
     <nav></nav>
     <main>
-      <h1>Create Article</h1>
-      <form id="createForm">
-        <input name="title" type="text" placeholder="Title" required />
-        <textarea name="body" placeholder="Body" required></textarea>
-        <input name="category" placeholder="Category" required />
-        <button type="submit">Create Article</button>
-      </form>
-      <p id="msg"></p>
+      <div class="create-page">
+        <header class="page-header">
+          <h1>Create Article</h1>
+          <p class="page-subtitle">
+            Write a title, pick a category, and add the article text.
+          </p>
+        </header>
+
+        <section class="card">
+          <form id="createForm" class="form">
+            <label class="field">
+              <span>Title</span>
+              <input
+                name="title"
+                placeholder="Example: New café opens in Oslo"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>Category</span>
+              <input
+                name="category"
+                placeholder="Example: Local / Tech / Sports"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>Body</span>
+              <textarea
+                name="body"
+                placeholder="Write your article here..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Create Article</button>
+          </form>
+          <p id="msg"></p>
+        </section>
+      </div>
     </main>
     <script type="module" src="/src/create.js"></script>
   </body>
