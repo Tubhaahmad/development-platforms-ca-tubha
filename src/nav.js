@@ -14,8 +14,8 @@ export async function renderNav() {
   // render different nav items based on login status //
   if (session) {
     nav.innerHTML = `
-      <a href="/">Home</a>
-      <a href="/create.html">Create article</a>
+       <a href="index.html">Home</a>
+      <a href="create.html">Create article</a>
       <button id="logoutBtn" type="button">Logout</button>
     `;
 
@@ -26,9 +26,9 @@ export async function renderNav() {
     });
   } else {
     nav.innerHTML = `
-      <a href="/">Home</a>
-      <a href="/register.html">Register</a>
-      <a href="/login.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
     `;
   }
 }
