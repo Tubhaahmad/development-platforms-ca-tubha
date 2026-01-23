@@ -79,6 +79,9 @@ VITE_SUPABASE_ANON_KEY=YOUR_PUBLISHABLE_KEY
 
 `bash
 npm install
+`
+
+`bash
 npm run dev
 `
 
